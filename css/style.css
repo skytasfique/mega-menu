@@ -3,105 +3,6 @@
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
-/* =================================== */
-/*  Basic Style 
-/* =================================== */
-::-moz-selection {
-  /* Code for Firefox */
-  background-color: #e6e6e6;
-  color: #fff;
-}
-
-::selection {
-  background-color: #e6e6e6;
-  color: #fff;
-}
-
-::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #777777;
-  font-weight: 300;
-}
-
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #777777;
-  opacity: 1;
-  font-weight: 300;
-}
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #777777;
-  opacity: 1;
-  font-weight: 300;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #777777;
-  font-weight: 300;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #777777;
-  font-weight: 300;
-}
-
-body {
-  color: #777777;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.625em;
-  position: relative;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.gray-bg {
-  background: #f9f9ff;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
-  color: #000;
-  line-height: 1.2em !important;
-  margin-bottom: 0;
-  margin-top: 0;
-  font-weight: 600;
-}
-
-h1 {
-  font-size: 36px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-h5 {
-  font-size: 16px;
-}
-
-h6 {
-  font-size: 14px;
-}
-
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -137,7 +38,7 @@ h6 {
   margin: 24px 0px;
   text-align: right;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 991px) {
   .mega-menu-header-area .mega-header {
     display: none;
   }
