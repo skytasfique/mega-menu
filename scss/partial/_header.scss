@@ -1,10 +1,41 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header-area {
+.mega-menu-header-area {
     background: $primary-color;
     // position: relative;
     // z-index: 9999;
+    .main {
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .mega-header {
+        margin: 24px 0px;
+        text-align: right;
+        @media screen and (min-width: 1200px) {
+            display: none;
+        }
+    }
+    .navbar-nav {
+        margin-left: auto;
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            position: absolute;
+            right: 12%;
+            margin-top: 4px;
+        }
+    }
+    .single-row {
+        margin-bottom: 32px;
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            margin-bottom: 0px;
+        }
+        .nav {
+            flex-direction: column;
+            margin-bottom: 32px;
+        }
+    }
     .navbar-toggler {
         background-color: $black;
         margin-bottom: 5px;
@@ -13,7 +44,7 @@
             right: 12%;
             margin-top: 4px;
         }
-        @media screen and (min-width: 768px) and (max-width: 800px){
+        @media screen and (min-width: 768px) and (max-width: 800px) {
             right: 2%;
             margin-top: 20px;
         }
@@ -21,17 +52,16 @@
             right: 2%;
             top: 5px;
         }
-        .fa{
+        .fa {
             background-color: black;
-
         }
     }
 
-    @media (max-width: 991.98px){
-    .header-bottom.show {
-        right: 0;
-        z-index: 9999;
-      }
+    @media (max-width: 991.98px) {
+        .header-bottom.show {
+            right: 0;
+            z-index: 9999;
+        }
     }
 
     .header-bottom {
@@ -70,18 +100,20 @@
             width: 80%;
             height: 100%;
             z-index: 9;
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             background-color: white;
-
         }
-        
+
         // @media screen and (max-width: 320px) {
         //     top: 15px;
         // }
     }
-    .navbar{
+    .navbar {
+        @media screen and (max-width: 991px) {
+            padding: 0px;
+        }
         @media screen and (max-width: 320px) {
-            padding: 25px;        
+            padding: 25px;
         }
     }
 
@@ -104,13 +136,13 @@
                 position: absolute;
                 top: 32px;
             }
-           
         }
         .main-container {
             padding: 30px;
             background-color: $white;
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
             margin-right: 11px;
+            width: 100%;
             @media screen and (max-width: 991px) {
                 margin-right: 0;
             }
@@ -121,15 +153,14 @@
                 padding-left: 20px;
                 padding-bottom: 7px;
                 margin-bottom: 15px;
-                &--clickable{
-                    &:hover{
+                &--clickable {
+                    &:hover {
                         border-bottom: 1.2px solid #e3e8ec;
-
                     }
-
                 }
-                &--brand{
+                &--brand {
                     border-bottom: 1.2px solid #e3e8ec;
+                    
                 }
                 &::before {
                     content: "";
@@ -213,14 +244,13 @@
     }
 }
 
-
 .header-scrolled {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
-.brand-img{
+.brand-img {
     max-width: 100px;
     padding-bottom: 20px;
     @media screen and (max-width: 1024px) {
@@ -228,43 +258,39 @@
     }
     @media screen and (max-width: 767px) {
         max-width: 50px;
-
     }
-    
 }
-.border-brand{
-    border-left: 1px solid  #e3e8ec;
+.border-brand {
+    border-left: 1px solid #e3e8ec;
     padding-left: 10px;
 }
-.big-img{
+.big-img {
     margin-top: 10px;
-    border-top: 1px solid  #e3e8ec;
+    border-top: 1px solid #e3e8ec;
     padding: 20px 0px;
-    max-width: 150px;
+    max-width: 120px;
     @media screen and (max-width: 1024px) {
         max-width: 120px;
     }
     @media screen and (max-width: 767px) {
         max-width: 100px;
-
     }
 }
 
-.responsive-menu-close, .responsive-menu-trigger {
+.responsive-menu-close,
+.responsive-menu-trigger {
     color: black;
     font-size: 1.25rem;
 }
 
-.brand-last-img{
-    width: 180px; 
-    height: 270px;
+.brand-last-img {
+    max-width: 150px;
     @media screen and (max-width: 1024px) {
-        width: 130px; 
-        height: 200px;
+        max-width: 130px;
+
     }
     @media screen and (max-width: 767px) {
-        width: 130px; 
-        height: 200px;
+        max-width: 100px;
 
     }
 }
