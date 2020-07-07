@@ -1,8 +1,17 @@
 /*--------------------------------------------------------------
 # Header
+
 --------------------------------------------------------------*/
+$mega-primary-color	: #e6e6e6;
+$mega-title-color	: #222222;
+$mega-text-color		: #777777;
+$mega-nav-hover      : #a6a6a6;
+
+$mega-white			: #fff;
+$mega-black			: #232323;
+
 .mega-menu-header-area {
-    background: $primary-color;
+    background: $mega-primary-color;
     // position: relative;
     // z-index: 9999;
     .nav-wrapper {
@@ -63,7 +72,7 @@
         }
     }
     .navbar-toggler {
-        background-color: $black;
+        background-color: $mega-black	;
         margin-bottom: 5px;
         @media screen and (max-width: 991px) {
             position: absolute;
@@ -79,7 +88,7 @@
             top: 5px;
         }
         .fa {
-            background-color: $black;
+            background-color: $mega-black	;
         }
     }
 
@@ -98,7 +107,7 @@
         // margin-top: 7px;
         .nav-link {
             padding: 14px 25px;
-            color: $title-color;
+            color: $mega-title-color;
             font-size: 16px;
             font-weight: 500;
             text-transform: uppercase;
@@ -108,7 +117,7 @@
                 padding: 3px 25px;
             }
             &:hover {
-                background: $nav-hover;
+                background: $mega-nav-hover;
                 display: block;
                 z-index: 9999;
             }
@@ -119,7 +128,7 @@
             // position: absolute;
             // top: 20px;
             // width: 100%;
-            // background: $text-color;
+            // background: $mega-text-color;
             position: fixed;
             right: -100%;
             top: 0;
@@ -176,7 +185,7 @@
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
-                    border: 1px solid $nav-hover;
+                    border: 1px solid $mega-nav-hover;
                     opacity: 1;
                     display: block;
                     transition: 0.5s ease;
@@ -212,7 +221,7 @@
         }
         .main-container {
             padding: 20px 20px 0px 20px;
-            background-color: $white;
+            background-color: $mega-white;
             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
             margin-right: 11px;
             width: 100%;
@@ -241,8 +250,8 @@
                     backface-visibility: hidden;
                     color: #282828;
                     &:hover {
-                        background-color: $primary-color;
-                        color: $black;
+                        background-color: $mega-primary-color;
+                        color: $mega-black	;
                         text-decoration: none;
                     }
                 }
@@ -256,7 +265,7 @@
                     top: 8px;
                     width: 10px;
                     height: 10px;
-                    background-color: $title-color;
+                    background-color: $mega-title-color;
                 }
             }
 
@@ -278,7 +287,7 @@
                 padding-left: 10px;
                 word-wrap: break-word;
                 &:hover {
-                    background-color: $nav-hover;
+                    background-color: $mega-nav-hover;
                     text-decoration: none;
                 }
             }
@@ -333,13 +342,13 @@
         }
     }
     &--dark {
-        background: $primary-color;
+        background: $mega-primary-color;
         .fa-times {
             color: white;
         }
 
         .navbar-toggler {
-            background-color: $black;
+            background-color: $mega-black	;
             margin-bottom: 5px;
             @media screen and (max-width: 991px) {
                 position: absolute;
@@ -355,7 +364,7 @@
                 top: 5px;
             }
             .fa {
-                background-color: $black;
+                background-color: $mega-black	;
             }
         }
 
@@ -374,7 +383,7 @@
             // margin-top: 7px;
             .nav-link {
                 padding: 14px 25px;
-                color: $title-color;
+                color: $mega-title-color;
                 font-size: 16px;
                 font-weight: 500;
                 text-transform: uppercase;
@@ -395,7 +404,7 @@
                 // position: absolute;
                 // top: 20px;
                 // width: 100%;
-                // background: $text-color;
+                // background: $mega-text-color;
                 position: fixed;
                 right: -100%;
                 top: 0;
@@ -403,7 +412,7 @@
                 height: 100%;
                 z-index: 9;
                 transition: all 0.3s ease-in-out;
-                background-color: $black;
+                background-color: $mega-black	;
             }
 
             // @media screen and (max-width: 320px) {
@@ -415,7 +424,7 @@
             border: none;
             .main-container {
                 padding: 20px 20px 0px 20px;
-                background-color: $black;
+                background-color: $mega-black	;
                 box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
                 margin-right: 11px;
                 width: 100%;
@@ -431,7 +440,7 @@
                     padding-left: 20px;
                     // padding-bottom: 7px;
                     // margin-bottom: 15px;
-                    color: $white;
+                    color: $mega-white;
                     font-size: 16px;
                     max-width: 160px;
                     word-wrap: break-word;
@@ -445,10 +454,10 @@
                         -moz-backface-visibility: hidden;
                         -webkit-backface-visibility: hidden;
                         backface-visibility: hidden;
-                        color: $white;
+                        color: $mega-white;
                         &:hover {
-                            background-color: $primary-color;
-                            color: $black;
+                            background-color: $mega-primary-color;
+                            color: $mega-black	;
                             text-decoration: none !important;
                         }
                     }
@@ -462,7 +471,7 @@
                         top: 8px;
                         width: 10px;
                         height: 10px;
-                        background-color: $primary-color;
+                        background-color: $mega-primary-color;
                     }
                 }
 
@@ -476,14 +485,14 @@
                     -webkit-backface-visibility: hidden;
                     backface-visibility: hidden;
                     font-weight: 400;
-                    color: $white;
+                    color: $mega-white;
                     font-size: 13px;
                     width: 100%;
                     padding-left: 10px;
                     word-wrap: break-word;
                     &:hover {
-                        color: darken($color: $black, $amount: 50%);
-                        background-color: lighten($color: $primary-color, $amount: 20%);
+                        color: darken($color: $mega-black	, $amount: 50%);
+                        background-color: lighten($color: $mega-primary-color, $amount: 20%);
                         text-decoration: none;
                     }
                 }
@@ -526,7 +535,7 @@
 
 .responsive-menu-close,
 .responsive-menu-trigger {
-    color: $black;
+    color: $mega-black	;
     font-size: 1.25rem;
 }
 
@@ -558,4 +567,23 @@
 
 .padding-none {
     padding-bottom: 0px;
+}
+
+.mega-menu-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: rgba(0,0,0,.6);
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
