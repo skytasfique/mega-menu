@@ -37,7 +37,8 @@
     padding-right: 0px;
   }
 }
-.mega-menu-header-area .navbar > .container, .mega-menu-header-area .navbar > .container-fluid {
+.mega-menu-header-area .navbar > .container,
+.mega-menu-header-area .navbar > .container-fluid {
   display: block;
 }
 .mega-menu-header-area .wrapper {
@@ -64,7 +65,7 @@
   }
 }
 .mega-menu-header-area .single-row {
-  margin-bottom: 32px;
+  padding: 20px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .mega-menu-header-area .single-row {
@@ -168,6 +169,9 @@
   border: 0;
   border-radius: 0;
 }
+.mega-menu-header-area .navbar .dropdown-menu.mega-menu--another-brand {
+  max-width: 620px;
+}
 @media screen and (max-width: 991px) {
   .mega-menu-header-area .navbar .dropdown-menu.mega-menu {
     width: 100%;
@@ -178,6 +182,41 @@
     position: absolute;
     top: 32px;
   }
+}
+.mega-menu-header-area .navbar .dropdown-menu.mega-menu .brand-large-img .brand-image {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #a6a6a6;
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.mega-menu-header-area .navbar .dropdown-menu.mega-menu .brand-large-img .brand-image--categories {
+  height: 300px;
+}
+.mega-menu-header-area .navbar .dropdown-menu.mega-menu .brand-large-img .img {
+  position: relative;
+  width: 100%;
+}
+.mega-menu-header-area .navbar .dropdown-menu.mega-menu .brand-large-img .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mega-menu-header-area .navbar .dropdown-menu.mega-menu .brand-large-img .img:hover .image {
+  opacity: 0.3;
+}
+.mega-menu-header-area .navbar .dropdown-menu.mega-menu .brand-large-img .img:hover .middle {
+  opacity: 1;
 }
 .mega-menu-header-area .navbar .dropdown-menu .main-container {
   padding: 30px;
@@ -197,7 +236,6 @@
   font-weight: 400;
   padding-left: 20px;
   padding-bottom: 7px;
-  margin-bottom: 15px;
 }
 .mega-menu-header-area .navbar .dropdown-menu .main-container .megamenu-head--clickable {
   position: relative;
@@ -339,18 +377,10 @@
   font-size: 1.25rem;
 }
 
-.brand-last-img {
-  max-width: 300px;
-}
-@media screen and (max-width: 1024px) {
-  .brand-last-img {
-    max-width: 230px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .brand-last-img {
-    max-width: 180px;
-  }
+.mega-menu-category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
