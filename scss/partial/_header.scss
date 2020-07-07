@@ -36,6 +36,8 @@
         }
     }
     .single-row {
+        margin-bottom: 15px;
+        padding: 0 7.5px;
         @media screen and (min-width: 768px) and (max-width: 991px) {
             margin-bottom: 0px;
         }
@@ -75,7 +77,7 @@
             top: 5px;
         }
         .fa {
-            background-color: black;
+            background-color: $black;
         }
     }
 
@@ -153,7 +155,6 @@
             border: 0;
             border-radius: 0;
             &--brand{
-                padding: 20px;
             }
             &--another-brand {
                 max-width: 620px;
@@ -214,7 +215,7 @@
             margin-right: 11px;
             width: 100%;
             &--brand{
-                padding: 20px;
+                padding:20px 20px 20px 20px;
             }
             @media screen and (max-width: 991px) {
                 margin-right: 0;
@@ -225,6 +226,7 @@
                 // padding-bottom: 7px;
                 // margin-bottom: 15px;
                 width: 100%;
+                font-size: 16px;
                 word-wrap: break-word;
                 &--clickable {
                     position: relative;
@@ -238,7 +240,7 @@
                     color: #282828;
                     &:hover {
                         background-color: $primary-color;
-                        color: black;
+                        color: $black;
                         text-decoration: none;
                     }
                 }
@@ -268,8 +270,9 @@
                 font-weight: 400;
                 width: 100%;
                 color: #282828;
-                font-size: 14px;
+                font-size: 13px;
                 padding: 3px;
+                max-width: 147px;
                 word-wrap: break-word;
                 &:hover {
                     background-color: $nav-hover;
@@ -349,7 +352,7 @@
                 top: 5px;
             }
             .fa {
-                background-color: black;
+                background-color: $black;
             }
         }
 
@@ -397,7 +400,7 @@
                 height: 100%;
                 z-index: 9;
                 transition: all 0.3s ease-in-out;
-                background-color: black;
+                background-color: $black;
             }
 
             // @media screen and (max-width: 320px) {
@@ -409,12 +412,12 @@
             border: none;
             .main-container {
                 padding:20px 20px 0px 20px;
-                background-color: black;
+                background-color: $black;
                 box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
                 margin-right: 11px;
                 width: 100%;
                 &--brand{
-                    padding: 0px 20px 20px 20px;
+                    padding:20px 20px 20px 20px;
                 }
                 @media screen and (max-width: 991px) {
                     margin-right: 0;
@@ -425,7 +428,8 @@
                     // padding-bottom: 7px;
                     // margin-bottom: 15px;
                     color: $white;
-                    min-width: 140px;
+                    font-size: 16px;
+                    max-width: 160px;
                     word-wrap: break-word;
 
                     &--clickable {
@@ -440,7 +444,7 @@
                         color: $white;
                         &:hover {
                             background-color: $primary-color;
-                            color: black;
+                            color: $black;
                             text-decoration: none !important;
                         }
                     }
@@ -467,14 +471,14 @@
                     -moz-backface-visibility: hidden;
                     -webkit-backface-visibility: hidden;
                     backface-visibility: hidden;
-                    font-weight: 300;
+                    font-weight: 400;
                     color: $white;
-                    font-size: 14px;
-                    // top: 50px;
+                    font-size: 13px;
+                    max-width: 147px;
                     word-wrap: break-word;
                     &:hover {
-                        color: black;
-                        background-color: $primary-color;
+                        color: darken($color: $black, $amount: 50%);
+                        background-color: lighten($color: $primary-color, $amount: 20%);
                         text-decoration: none;
                     }
                 }
@@ -517,7 +521,7 @@
 
 .responsive-menu-close,
 .responsive-menu-trigger {
-    color: black;
+    color: $black;
     font-size: 1.25rem;
 }
 
@@ -537,7 +541,9 @@
     }
 }
 .mega-menu-category > * {
-    flex: 1 1 0px;
+    flex: 0 1 auto;
+    // flex: 1 1 160px;
+    // flex: min-content;
 }
 
 .padding-none {
